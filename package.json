@@ -1,0 +1,19 @@
+{
+  "name": "raisedadead-cv",
+  "version": "0.0.0",
+  "description": "Mrugesh Mohapatra a.k.a raisedadead's cv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raisedadead/cv.git"
+  },
+  "author": "Mrugesh Mohapatra <me@raisedadead.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raisedadead/cv/issues"
+  },
+  "homepage": "https://github.com/raisedadead/cv#readme"
+}
