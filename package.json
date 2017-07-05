@@ -1,5 +1,5 @@
 {
-  "name": "raisedadead-cv",
+  "name": "@raisedadead/cv",
   "version": "0.0.0",
   "description": "Mrugesh Mohapatra a.k.a raisedadead's cv",
   "main": "index.js",
@@ -11,9 +11,21 @@
     "url": "git+https://github.com/raisedadead/cv.git"
   },
   "author": "Mrugesh Mohapatra <me@raisedadead.com>",
-  "license": "MIT",
+  "license": "CC-BY-NC-ND-4.0",
   "bugs": {
     "url": "https://github.com/raisedadead/cv/issues"
   },
-  "homepage": "https://github.com/raisedadead/cv#readme"
+  "homepage": "https://github.com/raisedadead/cv#readme",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "resume-schema": "0.0.16"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "cv",
+    "raisedadead",
+    "mrugesh",
+    "mohapatra",
+    "resume"
+  ]
 }
