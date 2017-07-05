@@ -1,9 +1,7 @@
 @raisedadead/cv
 ===
 
-[![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url]
-
->
+[![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url]
 
 ---
 ## CLI
@@ -28,8 +26,9 @@ $ npm install -g @raisedadead/cv
 ---
 ## License
 
-CC-BY-NC-ND-4.0
+[![Creative Commons License][license-image]][license-url]
 
+This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License][license-url].
 
 ## Copyright
 
@@ -41,14 +40,5 @@ Copyright &copy; 2017. Mrugesh Mohapatra.
 [build-image]: http://img.shields.io/travis//master.svg
 [build-url]: https://travis-ci.org/
 
-[coverage-image]: https://img.shields.io/codecov/c/github//master.svg
-[coverage-url]: https://codecov.io/github/?branch=master
-
-[dependencies-image]: http://img.shields.io/david/.svg
-[dependencies-url]: https://david-dm.org/
-
-[dev-dependencies-image]: http://img.shields.io/david/dev/.svg
-[dev-dependencies-url]: https://david-dm.org/dev/
-
-[github-issues-image]: http://img.shields.io/github/issues/.svg
-[github-issues-url]: https://github.com//issues
+[license-image]: https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png
+[license-url]: http://creativecommons.org/licenses/by-nc-nd/4.0/
