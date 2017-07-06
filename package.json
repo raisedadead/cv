@@ -23,7 +23,10 @@
     "url": "https://github.com/raisedadead/cv/issues"
   },
   "homepage": "https://github.com/raisedadead/cv#readme",
-  "dependencies": {},
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "resume-schema": "0.0.16"
+  },
   "devDependencies": {},
   "keywords": [
     "cv",

@@ -1,10 +1,13 @@
-let cv = require('./index.js');
-if (cv() === 'Hello! I am Mrugesh Mohapatra\'s resume') {
-  console.log(cv());
-  console.log('\nTests passed...');
+const fs = require("fs");
+const cv = require('./index.js');
+
+const resumeOriginal = JSON.parse(fs.readFileSync('./src/resume.json', 'utf8'));
+const resumeCaptured = cv();
+
+if(JSON.stringify(resumeCaptured) === JSON.stringify(resumeOriginal)){
+  console.log('resume\'s integrity is confirmed to PASS.\n');
   process.exit(0);
 } else {
-  console.log(cv());
-  console.log('\nTests failed...');
+  console.log('resume\'s integrity is confirmed to FAIL.\n');
   process.exit(1);
 }

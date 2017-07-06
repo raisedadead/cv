@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 module.exports = function cv (){
-  return 'Hello! I am Mrugesh Mohapatra\'s resume';
+  return JSON.parse(fs.readFileSync('./src/resume.json', 'utf8'));
 };
