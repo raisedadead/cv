@@ -34,11 +34,11 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDeri
 
 Copyright &copy; 2017. Mrugesh Mohapatra.
 
-[npm-image]: http://img.shields.io/npm/v/@raisedadead/cv.svg
+[npm-image]: https://img.shields.io/npm/v/@raisedadead/cv.svg
 [npm-url]: https://npmjs.org/package/@raisedadead/cv
 
-[build-image]: http://img.shields.io/travis//master.svg
-[build-url]: https://travis-ci.org/
+[build-image]: https://img.shields.io/travis/raisedadead/cv.svg
+[build-url]: https://travis-ci.org/raisedadead/cv
 
 [license-image]: https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png
-[license-url]: http://creativecommons.org/licenses/by-nc-nd/4.0/
+[license-url]: https://creativecommons.org/licenses/by-nc-nd/4.0/
