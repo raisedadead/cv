@@ -1,3 +1,10 @@
+language: node_js
+node_js:
+  - "6"
+
+before_install:
+  - npm i -g npm@latest
+
 deploy:
   provider: npm
   email: NPM_EMAIL
@@ -5,6 +12,7 @@ deploy:
   on:
     tags: true
     branch: master
+
 env:
   global:
   - secure: SncSOF+ZRRcfEGJ2Ab3AyL7XBM+wIp1P1RFfU4TRsmIbWwqUab6Zez9l8iNJdVwGyGW/MTfZ36Q3kYs+5px9tVM8k9CuNJIfYTw/DJI8EeHHabRTbrkQ3QyUwVYoRGTyqYJoSvdfyUyQ1JNNSrlqJcPLEepCK9bI7I4F+N4qwnGFm+TfkTHSOjDzfG6WPUOqaZdAYC/CKJJpWG4AsWgmcVXSwm/PXNk0Eg+ROcn0+koszDitS2mH4A9f4oectiTOg5iwt9C73+zrO1CwhxFmwd5b+eVq4F7ZVegTxZdPeszNgQyxUUjL8lrzGD0SM98UPi1juu9jpDXZnSlbVKw7NotUessKKhFxMTuOX6z+DrMLCJFYx1WF6Iv+h0TcvF9rtRyFEUVvnqakrvL9BPilS1hBkfNaNmqHIhs2vD0ZINRIFu+P0wd0qaTnF3qpxi4ZByGAgp0/M6yAoxml+Y5kY4vQyCCbNV5zS2Ny4IdyfvKdKN5MKfdcY0W9QaOy00NRxYaxtwuyHMe3XpsTP+SFV5eV+8He7IgosLloRc0kz7ZInV1UgnsAUnHsHreqhGhbhszL3wvxshGSUKuz4YPG1Kn6VoRqw2sGljTgFEe1Feiumr5Xco6iZnN7/24+mjvMlqkOPx19vSXngA0TOxj9w3XSkv1ZZtRcc0AvxfhKHDc=
