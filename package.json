@@ -3,19 +3,18 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Mrugesh Mohapatra a.k.a raisedadead's cv",
   "main": "index.js",
   "scripts": {
+    "commit": "git-cz",
     "start": "node index.js",
     "test": "node test.js",
-    "preversion": "npm test",
-    "version": "git add -A dist",
-    "postversion": "git push && git push --tags"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raisedadead/cv.git"
+    "url": "https://github.com/raisedadead/cv.git"
   },
   "author": "Mrugesh Mohapatra <me@raisedadead.com>",
   "license": "CC-BY-NC-ND-4.0",
@@ -25,14 +24,22 @@
   "homepage": "https://github.com/raisedadead/cv#readme",
   "dependencies": {
     "file-system": "^2.2.2",
-    "resume-schema": "0.0.16"
+    "resume-schema": "^0.0.16"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "semantic-release": "^6.3.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
   "keywords": [
     "cv",
     "raisedadead",
     "mrugesh",
-    "mohapatra",
     "resume"
   ]
 }

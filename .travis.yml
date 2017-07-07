@@ -1,19 +1,17 @@
 language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
 node_js:
-  - "6"
-
-before_install:
-  - npm i -g npm@latest
-
-deploy:
-  provider: npm
-  email: NPM_EMAIL
-  api_key: NPM_API_KEY
-  on:
-    tags: true
-    branch: master
-
-env:
-  global:
-  - secure: SncSOF+ZRRcfEGJ2Ab3AyL7XBM+wIp1P1RFfU4TRsmIbWwqUab6Zez9l8iNJdVwGyGW/MTfZ36Q3kYs+5px9tVM8k9CuNJIfYTw/DJI8EeHHabRTbrkQ3QyUwVYoRGTyqYJoSvdfyUyQ1JNNSrlqJcPLEepCK9bI7I4F+N4qwnGFm+TfkTHSOjDzfG6WPUOqaZdAYC/CKJJpWG4AsWgmcVXSwm/PXNk0Eg+ROcn0+koszDitS2mH4A9f4oectiTOg5iwt9C73+zrO1CwhxFmwd5b+eVq4F7ZVegTxZdPeszNgQyxUUjL8lrzGD0SM98UPi1juu9jpDXZnSlbVKw7NotUessKKhFxMTuOX6z+DrMLCJFYx1WF6Iv+h0TcvF9rtRyFEUVvnqakrvL9BPilS1hBkfNaNmqHIhs2vD0ZINRIFu+P0wd0qaTnF3qpxi4ZByGAgp0/M6yAoxml+Y5kY4vQyCCbNV5zS2Ny4IdyfvKdKN5MKfdcY0W9QaOy00NRxYaxtwuyHMe3XpsTP+SFV5eV+8He7IgosLloRc0kz7ZInV1UgnsAUnHsHreqhGhbhszL3wvxshGSUKuz4YPG1Kn6VoRqw2sGljTgFEe1Feiumr5Xco6iZnN7/24+mjvMlqkOPx19vSXngA0TOxj9w3XSkv1ZZtRcc0AvxfhKHDc=
-  - secure: S8oH89yMhW+kI3JIZfRCbN2EID30qPM/lAkwsg6FBBmhms/wNO6mIW6KDrFW2kXrLmdn/qPV4LD4q5ZPk12b6dAwUh2CZnUfWS5FHaXtLBynJ6O4G0/YvEha4uo+Q36EKbMG4/LWhVTapw9H8nNVoNI18OaKlG4Aq0cy3fLnVW4iuqxNWCjpnFC9R2fJtFFRAcyzlcS9qurmtmVUteEtsHEIP3GLQNz6fday99xuQfAyxoFXwnfin+3JC5jyahocLM4T1FULffr1CJcwGfEvTxe31sJEYis1zJXFYQeoMJ5O7eWJncKUCbdfGU+Mt1iNEUO7Etb4wTxmfN8gLwTOqIMNx1jcZ0kTPHTHMghggB0Bm8AxBRfAjHYs9PMz/HHUDQhgpmAg+AuCJAxHtAI8545Z1kyabnkjeV2ihTwIUQVzRfes/aVL6mZNcPQyZkEp8aic7+z1pH5W8qWboJ4iwkMvZiJw8cRLB/bQqk0ypQvYKhbpSyXCRqVQXMkYJf6v6GzeiMz0a9iKAispJ2388sR1GVTiQAZ9AtPQp6zaivgbP/6+LYTAZNlD2gybj808Am4lv/mh3fHWAYzkjDINsvMbSzR9bm16BfdSttXR17UsoY234NS/Pk32JxvRc+u7YoPQqssqgIKjwyJUElqQqB4Yw7MdKcax3kqyEZZUflE=
+  - '6'
+before_script:
+  - npm prune
+script:
+  - npm run test
+after_success:
+  - npm run semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
