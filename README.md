@@ -1,9 +1,11 @@
 @raisedadead/cv
 ===
 
-Note: Currently this is my test repo for 
+Note: 
+Currently this is my test repo for learning the awesome course by Kent C. Dodds 
+https://egghead.io/courses/how-to-write-an-open-source-javascript-library
 
-[![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url][![Semantic Release][[semantic-release-image]]][[semantic-release-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url] [![Semantic Release][semantic-release-image]][semantic-release-url]
 
 ---
 ## CLI
