@@ -1,6 +1,8 @@
 @raisedadead/cv
 ===
 
+Note: Currently this is my test repo for 
+
 [![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url][![Semantic Release][[semantic-release-image]]][[semantic-release-url]
 
 ---
